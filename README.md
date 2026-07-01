@@ -65,11 +65,14 @@ ankit-portfolio/
    python3 -m http.server 8080
    ```
 
-## 👨‍💻 Author
+## 🌐 Connect With Me
 **Author: Ankit Kumar**
-- LinkedIn: [in/ankit-kumar-693575323](https://www.linkedin.com/in/ankit-kumar-693575323/)
-- GitHub: [@ankitkumar810](https://github.com/ankitkumar810)
-- LeetCode: [ankit_kumar14](https://leetcode.com/u/ankit_kumar14/)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/ankit-kumar-693575323/)
+[![LeetCode](https://img.shields.io/badge/LeetCode-orange?style=for-the-badge&logo=leetcode)](https://leetcode.com/u/ankit_kumar14/)
+[![Gmail](https://img.shields.io/badge/Gmail-red?style=for-the-badge&logo=gmail)](mailto:ankit5456kumar@gmail.com)
+
+---
 
 ## 📜 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
