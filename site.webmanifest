@@ -1,0 +1,16 @@
+{
+  "name": "Ankit Kumar Portfolio",
+  "short_name": "Ankit Kumar",
+  "description": "Portfolio of Ankit Kumar — Software Development Engineer",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0A0F",
+  "theme_color": "#8B5CF6",
+  "icons": [
+    {
+      "src": "assets/favicon/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+/* =============================================
+   ANKIT KUMAR PORTFOLIO - RESPONSIVE STYLES
+   ============================================= */
+
+/* ---- Tablet (max 1024px) ---- */
+@media (max-width: 1024px) {
+    .hero .container {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        text-align: center;
+    }
+
+    .hero-content {
+        order: 2;
+    }
+
+    .hero-image {
+        order: 1;
+    }
+
+    .hero-stats {
+        justify-content: center;
+    }
+
+    .hero-cta {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .headline {
+        margin: 0 auto 32px;
+    }
+
+    .image-wrapper {
+        width: 280px;
+        height: 280px;
+    }
+
+    .profile-placeholder {
+        width: 230px;
+        height: 230px;
+        font-size: 5rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .timeline-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .cert-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-highlights {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ---- Mobile (max 768px) ---- */
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    /* Navigation */
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    /* Hero */
+    .name {
+        font-size: 2.8rem;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+    }
+
+    /* About */
+    .about-text {
+        padding: 28px;
+    }
+
+    .about-highlights {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* Skills */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Projects */
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-filter {
+        gap: 8px;
+    }
+
+    /* Timeline */
+    .timeline-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Certificates */
+    .cert-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact */
+    .contact-form {
+        padding: 24px;
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    /* Image Wrapper */
+    .image-wrapper {
+        width: 240px;
+        height: 240px;
+    }
+
+    .profile-placeholder {
+        width: 200px;
+        height: 200px;
+        font-size: 4rem;
+    }
+
+    /* Section Title */
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    /* Back to Top */
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 44px;
+        height: 44px;
+    }
+}
+
+/* ---- Small Mobile (max 480px) ---- */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .name {
+        font-size: 2.2rem;
+    }
+
+    .greeting {
+        font-size: 0.85rem;
+    }
+
+    .title {
+        font-size: 1.1rem;
+    }
+
+    .headline {
+        font-size: 0.95rem;
+    }
+
+    .image-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+
+    .profile-placeholder {
+        width: 170px;
+        height: 170px;
+        font-size: 3.5rem;
+    }
+
+    .badge-1, .badge-2, .badge-3 {
+        width: 42px;
+        height: 42px;
+        font-size: 1.1rem;
+    }
+
+    .about-text {
+        padding: 20px;
+    }
+
+    .highlight-item h3 {
+        font-size: 2rem;
+    }
+
+    .skill-category {
+        padding: 20px;
+    }
+
+    .cert-card {
+        padding: 20px;
+    }
+
+    .timeline-content {
+        padding: 16px;
+    }
+
+    .contact-card {
+        padding: 20px;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .nav-container {
+        padding: 0 16px;
+    }
+}
+
+/* ---- Landscape Mobile ---- */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 100px 0 60px;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+}
+
+/* ---- Large Screens ---- */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .name {
+        font-size: 5.5rem;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ---- Print Styles ---- */
+@media print {
+    .navbar,
+    .back-to-top,
+    .cursor-dot,
+    .cursor-outline,
+    #particles-js,
+    .loader {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    .glass-card {
+        border: 1px solid #ccc;
+        background: white;
+    }
+}

@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Kumar | Software Development Engineer</title>
+    <meta name="description" content="Portfolio of Ankit Kumar — final-year B.Tech CSE student at Parul University. Winner @CODEQUEST 2025, GSSoC'26 Contributor. Full-stack developer targeting SDE roles.">
+    <meta name="keywords" content="Ankit Kumar, Software Engineer, Full Stack Developer, Portfolio, React, Node.js, Java, DSA, SDE">
+    <meta name="author" content="Ankit Kumar">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ankit Kumar | Software Development Engineer">
+    <meta property="og:description" content="Final-year B.Tech CSE student. Winner @CODEQUEST 2025. Building real-world full-stack applications.">
+    <meta property="og:image" content="assets/profile.jpg">
+    <meta property="og:url" content="https://ankitkumar810.github.io/ankit-portfolio">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ankit Kumar | Software Development Engineer">
+    <meta name="twitter:description" content="Final-year B.Tech CSE student. Winner @CODEQUEST 2025. Building real-world full-stack applications.">
+    <meta name="twitter:image" content="assets/profile.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#8B5CF6">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Ankit Kumar",
+      "url": "https://ankitkumar810.github.io/ankit-portfolio",
+      "email": "ankit5456kumar@gmail.com",
+      "sameAs": [
+        "https://github.com/ankitkumar810",
+        "https://www.linkedin.com/in/ankit-kumar-693575323/",
+        "https://leetcode.com/u/ankit_kumar14/"
+      ],
+      "jobTitle": "Software Development Engineer",
+      "alumniOf": "Parul University",
+      "knowsAbout": ["JavaScript", "React", "Node.js", "Java", "Data Structures", "Full Stack Development"]
+    }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p>Loading Experience...</p>
+        </div>
+    </div>
+
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">AK<span>.</span></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <div class="mobile-menu-btn">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section-padding">
+        <div class="container">
+            <div class="hero-content">
+                <p class="greeting reveal-up">Hello, I'm</p>
+                <h1 class="name reveal-up delay-1">Ankit Kumar</h1>
+                <h2 class="title reveal-up delay-2">
+                    <span class="typing-text">Software Development Engineer</span><span class="cursor">|</span>
+                </h2>
+                <p class="headline reveal-up delay-3">
+                    A final-year B.Tech CSE student at Parul University turning complex problems into elegant, scalable solutions.
+                </p>
+                
+                <!-- Quick Stats / Achievements Highlight -->
+                <div class="hero-stats reveal-up delay-4">
+                    <div class="stat-item">
+                        <i class="fa-solid fa-trophy"></i>
+                        <span>Winner @CODEQUEST '25</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fa-solid fa-code-branch"></i>
+                        <span>GSSoC'26 Contributor</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <span>Innovative Mind @ PU Code Hackathon</span>
+                    </div>
+                </div>
+
+                <div class="hero-cta reveal-up delay-5">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="resume/Ankit_Kumar_Resume.pdf" class="btn btn-secondary" target="_blank">
+                        <i class="fa-solid fa-download"></i> Download Resume
+                    </a>
+                </div>
+                
+                <div class="social-links reveal-up delay-6">
+                    <a href="https://github.com/ankitkumar810" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ankit-kumar-693575323/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://leetcode.com/u/ankit_kumar14/" target="_blank" aria-label="LeetCode"><i class="fa-solid fa-code"></i></a>
+                    <a href="mailto:ankit5456kumar@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="hero-image reveal-scale">
+                <div class="image-wrapper glass-card">
+                    <!-- Placeholder for profile image -->
+                    <div class="profile-placeholder">
+                        <i class="fa-solid fa-user-astronaut"></i>
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fa-brands fa-node-js"></i>
+                    </div>
+                    <div class="floating-badge badge-3">
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <a href="#about">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text glass-card reveal-left">
+                    <p>I am a highly driven Software Engineer currently in my final year of B.Tech in Computer Science and Engineering at Parul University, New Delhi. My journey in technology is fueled by an insatiable curiosity and a commitment to building robust, real-world applications.</p>
+                    <p>I specialize in full-stack development, with a strong foundation in Data Structures and Algorithms. I thrive in hackathons and collaborative environments, constantly pushing the boundaries of what I can create. My approach to engineering is simple: <strong>Code. Learn. Build. Repeat.</strong></p>
+                    <p>Whether I'm architecting a scalable backend, designing an intuitive user interface, or optimizing complex database queries, I maintain a relentless focus on writing clean, efficient, and maintainable code.</p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <h3 class="counter" data-target="118">0</h3>
+                            <p>LeetCode Problems Solved</p>
+                        </div>
+                        <div class="highlight-item">
+                            <h3 class="counter" data-target="100">0</h3>
+                            <p>Days of Web Projects</p>
+                        </div>
+                        <div class="highlight-item">
+                            <h3 class="counter" data-target="7">0</h3>
+                            <p>GitHub Repositories</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding bg-alt">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Technical Arsenal</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category glass-card reveal-up tilt-card">
+                    <div class="category-header">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Java</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="progress-bar"><div class="skill-progress" data-progress="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="progress-bar"><div class="skill-progress" data-progress="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>C / C++</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="progress-bar"><div class="skill-progress" data-progress="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skill-category glass-card reveal-up delay-1 tilt-card">
+                    <div class="category-header">
+                        <i class="fa-solid fa-desktop"></i>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>React.js</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="progress-bar"><div class="skill-progress" data-progress="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML5 & CSS3</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="progress-bar"><div class="skill-progress" data-progress="95"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Tailwind CSS</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="progress-bar"><div class="skill-progress" data-progress="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend & Database -->
+                <div class="skill-category glass-card reveal-up delay-2 tilt-card">
+                    <div class="category-header">
+                        <i class="fa-solid fa-server"></i>
+                        <h3>Backend & Database</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Node.js & Express</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="progress-bar"><div class="skill-progress" data-progress="80"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MongoDB</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="progress-bar"><div class="skill-progress" data-progress="75"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MySQL</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="progress-bar"><div class="skill-progress" data-progress="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Others -->
+                <div class="skill-category glass-card reveal-up delay-3 tilt-card">
+                    <div class="category-header">
+                        <i class="fa-solid fa-wrench"></i>
+                        <h3>Tools & Core</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Git & GitHub</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="progress-bar"><div class="skill-progress" data-progress="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Data Structures & Algorithms</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="progress-bar"><div class="skill-progress" data-progress="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Operating Systems</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="progress-bar"><div class="skill-progress" data-progress="80"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="project-filters reveal-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="hackathon">Hackathon</button>
+            </div>
+            
+            <div class="project-grid">
+                <!-- SAFE-DEPLOY-AI -->
+                <div class="project-card glass-card reveal-up" data-category="hackathon">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ankitkumar810/SAFE-DEPLOY-AI" target="_blank" title="View Code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fa-solid fa-robot"></i>
+                            <span>AI DevOps Hackathon</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>SAFE-DEPLOY-AI</h3>
+                        <p>A memory-driven DevOps intelligence system built during HackBaroda Hackathon. It unifies deployments, infrastructure changes, incidents, and logs into a single AI layer to detect failure patterns.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Open Arms Foundation -->
+                <div class="project-card glass-card reveal-up delay-1" data-category="frontend">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ankitkumar810/NGO-website" target="_blank" title="View Code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                            <span>Frontend UI/UX</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Open Arms Foundation (NGO)</h3>
+                        <p>A modern and responsive NGO website simulating a real-world donation and volunteer platform. Features include mission sections, impact gallery, donation UI, and volunteer registration.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MQT MERN -->
+                <div class="project-card glass-card reveal-up delay-2" data-category="fullstack">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ankitkumar810/MQT_MERN" target="_blank" title="View Code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-placeholder">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>MERN Stack Training</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Marquee Training Platform</h3>
+                        <p>A comprehensive training platform built with the MERN stack. Includes robust backend architecture, database integration, and a responsive frontend interface for users.</p>
+                        <div class="project-tags">
+                            <span>MongoDB</span>
+                            <span>Express</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-more reveal-up">
+                <a href="https://github.com/ankitkumar810" target="_blank" class="btn btn-secondary">View All Projects on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Journey Section -->
+    <section id="experience" class="experience section-padding bg-alt">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Journey</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-column">
+                    <h3 class="column-title"><i class="fa-solid fa-user-graduate"></i> Education</h3>
+                    <div class="timeline-item reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Present</div>
+                        <div class="timeline-content glass-card">
+                            <h4>B.Tech in Computer Science & Engineering</h4>
+                            <h5>Parul University, New Delhi</h5>
+                            <p>Final year student. Focusing on full-stack development, algorithms, and software engineering principles.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-column">
+                    <h3 class="column-title"><i class="fa-solid fa-award"></i> Key Achievements</h3>
+                    <div class="timeline-item reveal-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2026</div>
+                        <div class="timeline-content glass-card">
+                            <h4>Open Source Contributor</h4>
+                            <h5>GirlScript Summer of Code (GSSoC'26)</h5>
+                            <p>Actively contributing to open-source projects, improving codebases, and collaborating with developers globally.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-content glass-card">
+                            <h4>Winner</h4>
+                            <h5>CODEQUEST 2025</h5>
+                            <p>Secured first place in the competitive programming and development challenge.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-content glass-card">
+                            <h4>Innovative Mind Award</h4>
+                            <h5>PU Code Hackathon 3.0</h5>
+                            <p>Recognized for building an innovative, real-world technical solution under pressure.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section-padding bg-alt">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Certifications</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="cert-gallery">
+                <!-- IBM Certification -->
+                <div class="cert-item reveal-up">
+                    <div class="cert-card-premium glass-card">
+                        <div class="cert-badge">IBM</div>
+                        <div class="cert-content">
+                            <h3>IBM Certification</h3>
+                            <p class="issuer">Etrain India</p>
+                            <p class="date">Sep 2025</p>
+                            <div class="cert-actions">
+                                <a href="https://drive.google.com/file/d/10g0b1UIs75VDFzaFvAgAKgW6OiShHCE0/view?usp=sharing" target="_blank" class="btn btn-sm">View Certificate</a>
+                                <a href="https://drive.google.com/uc?export=download&id=10g0b1UIs75VDFzaFvAgAKgW6OiShHCE0" class="btn btn-sm btn-outline">Download PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- HTML & CSS -->
+                <div class="cert-item reveal-up delay-1">
+                    <div class="cert-card-premium glass-card">
+                        <div class="cert-badge">W3C</div>
+                        <div class="cert-content">
+                            <h3>HTML & CSS</h3>
+                            <p class="issuer">Certifort</p>
+                            <p class="date">Mar 2025</p>
+                            <div class="cert-actions">
+                                <a href="https://drive.google.com/file/d/10g0b1UIs75VDFzaFvAgAKgW6OiShHCE0/view?usp=sharing" target="_blank" class="btn btn-sm">View Certificate</a>
+                                <a href="https://drive.google.com/uc?export=download&id=10g0b1UIs75VDFzaFvAgAKgW6OiShHCE0" class="btn btn-sm btn-outline">Download PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Operating Systems -->
+                <div class="cert-item reveal-up delay-2">
+                    <div class="cert-card-premium glass-card">
+                        <div class="cert-badge">OS</div>
+                        <div class="cert-content">
+                            <h3>Operating Systems Basics</h3>
+                            <p class="issuer">Technical Certification</p>
+                            <p class="date">Dec 2025</p>
+                            <div class="cert-actions">
+                                <a href="https://drive.google.com/file/d/10g0b1UIs75VDFzaFvAgAKgW6OiShHCE0/view?usp=sharing" target="_blank" class="btn btn-sm">View Certificate</a>
+                                <a href="https://drive.google.com/uc?export=download&id=10g0b1UIs75VDFzaFvAgAKgW6OiShHCE0" class="btn btn-sm btn-outline">Download PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info reveal-left">
+                    <p class="contact-desc">I'm currently looking for new opportunities as a Software Development Engineer. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                    
+                    <div class="contact-cards">
+                        <div class="contact-card glass-card">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="card-details">
+                                <h3>Email</h3>
+                                <p>ankit5456kumar@gmail.com</p>
+                                <a href="mailto:ankit5456kumar@gmail.com">Write me</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card glass-card">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <div class="card-details">
+                                <h3>LinkedIn</h3>
+                                <p>Ankit Kumar</p>
+                                <a href="https://www.linkedin.com/in/ankit-kumar-693575323/" target="_blank">Connect</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card glass-card">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="card-details">
+                                <h3>Location</h3>
+                                <p>New Delhi, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper glass-card reveal-right">
+                    <h3>Send me a message</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder=" " required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder=" " required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder=" " required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <span>Send Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">AK<span>.</span></a>
+                    <p>Code. Learn. Build. Repeat.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/ankitkumar810" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ankit-kumar-693575323/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://leetcode.com/u/ankit_kumar14/" target="_blank"><i class="fa-solid fa-code"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ankit Kumar. All rights reserved.</p>
+                <p class="credits">Designed & Built with <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+        <a href="#" id="backToTop" class="back-to-top" aria-label="Back to top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particles-config.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/skills.js"></script>
+</body>
+</html>
