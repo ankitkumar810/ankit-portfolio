@@ -66,7 +66,7 @@ ankit-portfolio/
    ```
 
 ## 👨‍💻 Author
-**Ankit Kumar**
+**Author: Ankit Kumar**
 - LinkedIn: [in/ankit-kumar-693575323](https://www.linkedin.com/in/ankit-kumar-693575323/)
 - GitHub: [@ankitkumar810](https://github.com/ankitkumar810)
 - LeetCode: [ankit_kumar14](https://leetcode.com/u/ankit_kumar14/)
